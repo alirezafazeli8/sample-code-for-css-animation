@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-shadow</title>
+</head>
+<style>
+    h1 {
+        text-align: center;
+        padding: 20px;
+        font-size: 50px;
+    }
+    /* simple text shadow */
+    h1.a {
+        text-shadow: 5px 5px gray;
+    }
+
+    /* blury text shadow */
+    h1.b {
+        text-shadow: 4px 4px 2px gray;
+    }
+
+    /* white text */
+    h1.c {
+        color: white;
+        text-shadow: 5px 5px 2px black;
+    }
+
+    /* negative text shadow */
+    h1.d {
+        text-shadow: -3px -3px 2px gray;
+    }
+</style>
+<body>
+    <h1 class="a">Welcome Friend</h1>
+    <h1 class="b">Welcome Friend</h1>
+    <h1 class="c">Welcome Friend</h1>
+    <h1 class="d">Welcome Friend</h1>
+</body>
+</html>

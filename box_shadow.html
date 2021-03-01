@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Shadow</title>
+</head>
+<style>
+    .container {
+        display: flex;
+    }
+
+    .box {
+        background-color: yellow;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    /* simple shadow */
+    .box {
+        box-shadow: 10px 10px black;
+    }
+
+    /* shadow with blur radius */
+    .box {
+        box-shadow: 10px 10px 5px gray;
+    }
+
+    /* negative shadow simple */
+    /* in hamoono miare bala */
+    .box {
+        box-shadow: -10px -10px 5px gray;
+    }
+
+    /* spread radius */
+    /* in karesh ine ke be shadow ma zekhamat mide */
+    .box {
+        box-shadow: 10px 10px 5px 2px gray;
+    }
+
+    /* inset shadow */
+    /* inam daghighan mesl negative miad baraks mikone vali sade tare */
+    .box {
+        box-shadow: inset 10px 10px 5px gray;
+    }
+
+    /* multiple shadow */
+    /* ba in ravesh mitoonim toye har dota taghir ijad konim */
+    .box {
+        box-shadow: 10px 10px 5px gray, -10px -10px 5px  gray;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>My Box</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, iste.</p>
+        </div>
+        <div class="box">
+            <h2>My Box</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, iste.</p>
+        </div>
+        <div class="box">
+            <h2>My Box</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, iste.</p>
+        </div>
+    </div>
+</body>
+</html>

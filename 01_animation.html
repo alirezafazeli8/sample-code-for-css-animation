@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css animation</title>
+</head>
+<style>
+    body {
+        background-color: teal;
+    }
+
+    .myanimate {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: tomato;
+        width: 300px;
+        height: 300px;
+        border: 5px solid black;
+        font-size: 0px;
+        /* animation */
+        animation-name: myanimation;
+        animation-duration: 5s;
+        /* delay animation */
+        animation-delay: 0.5;
+        /* animation iteration */
+        animation-iteration-count: 2;
+        /* animation iteration forever */
+        animation-iteration-count: infinite;
+
+        /* ------------------------------------------------- */
+        /* animation direction */
+
+        /* in be soorat noraml miad play mikone animation ro */
+        animation-direction: normal;
+
+        /* in miad animation ro be soorat baraks play mikone */
+        animation-direction: reverse;
+
+        /* in karesh ine ke ye bar noraml animation ro play mikone va bar dige baaraks playe mikone */
+        animation-direction: alternate;
+
+        /* baaaks playe mishe va be halat noraml bar migarde */
+        animation-direction: alternate-reverse;
+        /* ------------------------------------------------- */
+
+        /* animition timing function */
+        /* in be soorat defualt hast ke slow shro mishe va fast tammoom mikone */
+        animation-timing-function: ease;
+
+        /* timming liner */
+        /* in ba yek sorat yeksan shoro mikone va tamoom mikone */
+        animation-timing-function: linear;
+
+        /* animation ease in and ease out */
+        /* in slow shoro mishe */
+        animation-timing-function: ease-in;
+        /* ease out */
+        /* in sari shoro mishe va slow tamoom mishe */
+        animation-timing-function: ease-in-out;
+
+        /* cube bezier */
+        animation-timing-function: cubic-bezier(0, 0, 0, 0);
+
+        /* animation shorthand */
+        /* Animation name | duration | timing function | delay | count | direction */
+
+    }
+
+
+    @keyframes myanimation {
+        to {
+            background-color: red;
+            width: 500px;
+            height: 500px;
+            border-radius: 20px;
+            font-size: 50px;
+        }
+    }
+
+
+</style>
+<body>
+    <div class="myanimate"><h1>Fuck You :)</h1></div>
+</body>
+</html>
